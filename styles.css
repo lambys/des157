@@ -3,6 +3,13 @@ body {
   font-family: "VT323", "Courier New";
   color: white;
 }
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  src: local('VT323'), local('VT323'), url(VT323.ttf) format('woff2');
+}
+
 #wrapper {
   background-image: url(stars.gif);
     background-size: 195px;
