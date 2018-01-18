@@ -1,0 +1,90 @@
+body {
+  background-color: black;
+  font-family: "VT323", "Courier New";
+  color: white;
+}
+#wrapper {
+  background-image: url(stars.gif);
+    background-size: 195px;
+    margin: auto;
+    opacity: .9;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 850px;
+    height: 700px;
+    border-radius: 120px;
+    border: 5px dashed white;
+}
+
+
+#mySketch {
+  width: 800px;
+  height: 250px;
+  margin:auto;
+  margin-top:10%;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: inline-block;
+  float: left;
+  margin-left: 75px;
+}
+
+h2 {
+  font-size: 36px;
+  opacity: .7;
+  width: 300px;
+  text-align: center;
+  background: black;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+li {
+  background: white;
+  text-align: center;
+  opacity: .8;
+  margin: auto;
+  width: 200px;
+  color: black;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 25px;
+}
+
+li:hover {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+  text-shadow: 1px 1px 1px purple;
+}
+
+a:hover {
+  color: purple;
+  text-shadow: 1px 1px 1px pink;
+}
+
+footer {
+  clear: both;
+  background: white;
+  opacity: .8;
+  width: 60%;
+  font-size: 19px;
+  margin: auto;
+  border-radius: 100px;
+  text-align: center;
+  margin-top: 40%;
+}
+
+b {
+  font-size: 20px;
+  color: purple;
+}
