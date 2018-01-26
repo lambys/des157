@@ -12,6 +12,7 @@ body {
 
 #wrapper {
   background-image: url(stars.gif);
+    overflow:auto;
     background-size: 195px;
     margin: auto;
     opacity: .9;
@@ -21,7 +22,6 @@ body {
     border-radius: 120px;
     border: 5px dashed white;
 }
-
 
 #mySketch {
   width: 800px;
@@ -100,4 +100,8 @@ p {
   background: black;
   padding: 10px;
   width:400px;
+}
+
+.comp {
+  width:550px;
 }

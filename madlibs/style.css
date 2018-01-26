@@ -1,0 +1,107 @@
+body {
+  background-image: url(stars.gif);
+  background-size: 190px;
+  font-family: "VT323", "Courier New";
+  color: white;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+div {
+  margin: 2%;
+}
+
+#wrapper {
+  overflow: auto;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 900px;
+  height: 700px;
+  border-radius: 120px;
+  border: 5px dashed white;
+}
+
+form {
+  margin-top: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-size:36px;
+  text-shadow: 1px 1px 1px black;
+}
+
+label {
+  width: 20%;
+  padding: 10px;
+  font-size: 30px;
+  text-align: right;
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 2in;
+  padding: 15px;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.star {
+  position: absolute;
+  bottom: 500px;
+  right: 40%;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 20px;
+  margin-left:10%;
+}
+
+input[type="submit"], input[type="reset"] {
+  letter-spacing: 3px;
+  padding: 18px;
+  border: none;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p{
+  width: 400px;
+  font-size: 22px;
+    margin:30%;
+      letter-spacing: 1px;
+      background-color: black;
+      color:pink;
+      text-shadow:1px 1px 1px purple;
+      padding:20px;
+      image:url(http://78.media.tumblr.com/tumblr_m9srqwqLau1roozkr.gif);
+      border-style: inset;
+}
+
+.buttons{
+  position: absolute;
+  left: 60%;
+  margin: 10px;
+  bottom: 10%;
+}
+
+#pic {
+  position:fixed;
+  bottom:400px;
+  left: 500px;
+}
