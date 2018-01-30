@@ -89,7 +89,7 @@ p{
       color:pink;
       text-shadow:1px 1px 1px purple;
       padding:20px;
-      image:url(http://78.media.tumblr.com/tumblr_m9srqwqLau1roozkr.gif);
+      image:url(hhttps://78.media.tumblr.com/9ef26e21f8f9c4d58bbf539ad63fc37f/tumblr_p3cdru4Vfs1wgcsb4o1_1280.gif);
       border-style: inset;
 }
 
@@ -102,6 +102,15 @@ p{
 
 #pic {
   position:fixed;
-  bottom:400px;
-  left: 500px;
+  bottom:60%;
+  left: 35%;
+  width:500px;
+}
+
+#bun{
+
+    position:fixed;
+  bottom:30%;
+  left: 60%;
+  width:250px;
 }
