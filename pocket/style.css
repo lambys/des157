@@ -1,0 +1,134 @@
+* {
+  font-family: VT323;
+}
+
+body {
+  background-color: lavender;
+  background-size: 150px;
+}
+
+.icon {
+  position: fixed;
+  bottom: 47%;
+  left: 55%;
+  width: 150px;
+}
+
+#stathead {
+  position: absolute;
+  top: 1px;
+  font-size: 22px;
+  text-shadow: 1px 1px 1px purple;
+}
+
+#stats {
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: url("stars.gif");
+  color: white;
+  padding: 40px;
+  width: 200px;
+  border-radius: 50px;
+  position: absolute;
+  top: 100px;
+  right: 28%;
+  left: 55%;
+}
+
+.message {
+  display: none;
+  background-image: url("stars.gif");
+  background-size: 150px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: VT323;
+  padding: 50px;
+  width: 200px;
+  position: absolute;
+  border-radius: 100px;
+  top: 40%;
+  left: 40%;
+  text-shadow: 1px 1px 1px purple;
+}
+
+#msg1 {
+  display: none;
+}
+
+#button {
+  position: fixed;
+  left: 242px;
+  top: 200px;
+  opacity: 0;
+}
+
+#button2 {
+  position: fixed;
+  left: 205px;
+  top: 49px;
+  opacity: 0;
+}
+
+#button3 {
+  position: fixed;
+  left: 235px;
+  top: 164px;
+  opacity: 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: white;
+  position: fixed;
+  top: 10px;
+  left: 60%;
+  text-shadow: 1px 1px 1px purple;
+}
+
+.inv {
+  font-size: 20px;
+  position: fixed;
+  top: 40%;
+  background-color: rgba(214, 173, 214, 0.8);
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  width: 200px;
+  margin: auto;
+  border-radius: 100px;
+}
+
+
+/* for mobile */
+
+@media only screen and (max-width: 768px) {
+  #stats {
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    width: 100px;
+  }
+  .message {
+    position: absolute;
+    width: 150px;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+  }
+  .inv {
+    top: 30%;
+  }
+  h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .icon {
+    position: fixed;
+    bottom: 55%;
+    left: 30%;
+    width: 150px;
+  }
+}
