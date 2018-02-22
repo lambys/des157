@@ -105,3 +105,13 @@ p {
 .comp {
   width:550px;
 }
+
+#mood1 {
+  position:absolute;
+left:5%;
+}
+
+#mood2 {
+  position:absolute;
+right:5%;
+}
