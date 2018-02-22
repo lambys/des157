@@ -46,3 +46,17 @@ canvas {
   bottom: 10%;
   left: 10%;
 }
+
+footer {
+  font-family: VT323, Courier;
+  font-size:15px;
+  color: purple;
+  text-shadow: 1px 1px 1px pink;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 200px;
+  position:absolute;
+  bottom:5%;
+  left:20%;
+  border-radius: 100px;
+}
