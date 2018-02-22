@@ -6,90 +6,6 @@ var bun = document.getElementById('bun');
 var width = window.innerWidth;
 var height = window.innerHeight;
 
-// KONVA library for drag&drop events
-function drawImage(imageObj) {
-  var stage = new Konva.Stage({
-    container: 'container',
-    width: 700,
-    height: 700
-  });
-
-  var layer = new Konva.Layer();
-
-  //planet shape
-  var planet = new Konva.Ellipse({
-    x: 600,
-    y: 600,
-    radius: { x: 100, y: 100
-    },
-    //gradient color fill
-    fillLinearGradientStartPoint: {x: -50, y: -50},
-    fillLinearGradientEndPoint: {x: 50,y: 50},
-    fillLinearGradientColorStops: [0, 'pink', 1, 'purple'],
-    strokeWidth: 0
-  });
-
-  // add the planet shape to the layer
-  layer.add(planet);
-
-  // bunny ufo
-  var bunImg = new Konva.Image({
-    image: imageObj,
-    x: 1,
-    y: 1,
-    width: 300,
-    height: 300,
-    draggable: true
-  });
-
-  //add img to the layer
-  layer.add(bunImg);
- // add the layer to the stage
-  stage.add(layer);
-
-//when clicking and dragging
-  stage.on("dragmove", function(){
-  msg1.innerHTML = "almost there!";
-  //resets bunny image if dropped
-  bunImg.setImage(imageObj);
-  //resets end result gradient back to normal
-  planet.setFillLinearGradientStartPoint({x : -50, y : -50});
-    planet.setFillLinearGradientEndPoint({x : 50, y : 50});
-    planet.setFillLinearGradientColorStops([0, 'pink', 1, 'purple']);
-    });
-
-//creates drop event based on end of drag
-   stage.on("dragend", function(e){
-       var pos = stage.getPointerPosition();
-       var shape = layer.getIntersection(pos);
-       if (shape) {
-           planet.fire('drop', {
-               type : 'drop',
-               evt : e.evt
-           }, true);
-       }
-   });
-
-//end drop result: img and colors change
-   stage.on("drop", function(e){
-     e.target.fillLinearGradientStartPoint({x : -50, y : -50});
-     e.target.fillLinearGradientEndPoint({x : 50, y : 50});
-     e.target.fillLinearGradientColorStops([0, 'purple', 1, 'pink']);
-     bunImg.setImage(imageObj2);
-       msg1.innerHTML = "we made it!";
-       layer.draw();
-   });
-
-}
-var imageObj = new Image();
-imageObj.onload = function() {
-  drawImage(this);
-};
-imageObj.src = 'https://78.media.tumblr.com/63c3ffe2801d06d2803c29532f3104f0/tumblr_p47pinDWKm1wgcsb4o1_400.gif';
-
-var imageObj2 = new Image();
-imageObj2.src = 'https://78.media.tumblr.com/390e73fce89a8c2f04507092acdb44f4/tumblr_p4je6b4dy21wgcsb4o1_400.png';
-
 // particles library!
 particlesJS("particles-js", {
   "particles": {
@@ -183,3 +99,87 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+// KONVA library for drag&drop events
+function drawImage(imageObj) {
+  var stage = new Konva.Stage({
+    container: 'container',
+    width: 700,
+    height: 700
+  });
+
+  var layer = new Konva.Layer();
+
+  //planet shape
+  var planet = new Konva.Ellipse({
+    x: 600,
+    y: 600,
+    radius: { x: 100, y: 100
+    },
+    //gradient color fill
+    fillLinearGradientStartPoint: {x: -50, y: -50},
+    fillLinearGradientEndPoint: {x: 50,y: 50},
+    fillLinearGradientColorStops: [0, 'pink', 1, 'purple'],
+    strokeWidth: 0
+  });
+
+  // add the planet shape to the layer
+  layer.add(planet);
+
+  // bunny ufo
+  var bunImg = new Konva.Image({
+    image: imageObj,
+    x: 1,
+    y: 1,
+    width: 300,
+    height: 300,
+    draggable: true
+  });
+
+  //add img to the layer
+  layer.add(bunImg);
+ // add the layer to the stage
+  stage.add(layer);
+
+//when clicking and dragging
+  stage.on("dragmove", function(){
+  msg1.innerHTML = "almost there!";
+  //resets bunny image if dropped
+  bunImg.setImage(imageObj);
+  //resets end result gradient back to normal
+  planet.setFillLinearGradientStartPoint({x : -50, y : -50});
+    planet.setFillLinearGradientEndPoint({x : 50, y : 50});
+    planet.setFillLinearGradientColorStops([0, 'pink', 1, 'purple']);
+    });
+
+//creates drop event based on end of drag
+   stage.on("dragend", function(e){
+       var pos = stage.getPointerPosition();
+       var shape = layer.getIntersection(pos);
+       if (shape) {
+           planet.fire('drop', {
+               type : 'drop',
+               evt : e.evt
+           }, true);
+       }
+   });
+
+//end drop result: img and colors change
+   stage.on("drop", function(e){
+     e.target.fillLinearGradientStartPoint({x : -50, y : -50});
+     e.target.fillLinearGradientEndPoint({x : 50, y : 50});
+     e.target.fillLinearGradientColorStops([0, 'purple', 1, 'pink']);
+     bunImg.setImage(imageObj2);
+       msg1.innerHTML = "we made it!";
+       layer.draw();
+   });
+
+}
+var imageObj = new Image();
+imageObj.onload = function() {
+  drawImage(this);
+};
+imageObj.src = 'https://78.media.tumblr.com/63c3ffe2801d06d2803c29532f3104f0/tumblr_p47pinDWKm1wgcsb4o1_400.gif';
+
+var imageObj2 = new Image();
+imageObj2.src = 'https://78.media.tumblr.com/390e73fce89a8c2f04507092acdb44f4/tumblr_p4je6b4dy21wgcsb4o1_400.png';
