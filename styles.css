@@ -116,3 +116,11 @@ left:5%;
   position:absolute;
 right:5%;
 }
+
+.wire{
+  margin:auto;
+  clear:both;
+  margin-top:20px;
+  margin-left:40%;
+  width:25%;
+}
