@@ -1,0 +1,124 @@
+* {
+font-family: "VT323";
+margin:auto;
+}
+
+body {
+  background-image: url("stars.gif");
+  background-size: 13%;
+}
+
+h1 {
+  text-align:center;
+color:white;
+text-shadow: 1px 1px 1px purple;
+  font-size: 50px;
+  margin-top:20%;
+}
+
+a {
+  margin:auto;
+  margin-left:50px;
+  font-size: 30px;
+  background-color:white;
+  padding:5px;
+  border-style: inset;
+}
+
+img {
+position:fixed;
+  clear:both;
+  left:40%;
+}
+
+nav{
+    left:38%;
+
+    bottom:35%;
+    position:absolute;
+}
+#community{
+left:40%;
+margin-top:20px;
+position:absolute;
+display:inline-block;
+}
+
+form{
+  font-size:30px;
+}
+
+.planet{
+  left:35%;
+  bottom:40%;
+}
+
+.star{
+  left:56%;
+
+  bottom:40%;
+}
+
+#select {
+  right:40%;
+  margin-top:20px;
+  position:absolute;
+  display:inline-block;
+}
+
+#custom {
+font-size:30px;
+  left:40%;
+  margin-top:20px;
+  position:absolute;
+  display:inline-block;
+}
+
+select{
+margin-left:20px;
+  font-size:20px;
+}
+
+.raise {
+  margin-top:8%;
+
+    margin-bottom:13%;
+}
+
+.raise2 {
+  margin-top:4%;
+
+    margin-bottom:20%;
+}
+#avatar{
+  top:20%;
+}
+
+#confirm {
+  left:42%;
+
+  bottom:55%;
+  position:absolute;
+}
+
+#galaxy{
+  left:30%;
+
+  top:20%;
+  position:absolute;
+}
+
+#end{
+  left:35%;
+
+  bottom:5%;
+  position:absolute;
+}
+
+#choose{
+
+    left:42%;
+
+    top:15%;
+    position:absolute;
+}
