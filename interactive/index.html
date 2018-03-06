@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>interactive galaxy</title>
+  <link rel="stylesheet" href="wire.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- particles.js container -->
+
+
+  <div id="particles-js">
+  </div>
+  <div id="planets">
+  </div>
+  <h1 id="label"> welcome </h1>
+
+  <p id="p1"> have you ever wanted to visualize your place in your communities?<br>
+    galaxsee is a project that represents communities as interactive galaxies.<br>
+    press start to customize yourself, or choose to view existing communities. </p>
+
+  <p id="p2"> choose any and all communities that apply to you!</p>
+  <p id="p2b"> you have chosen: <br><br> is this correct?</p>
+
+  <form id="community" action="/action_page.php" method="get">
+    <input type="checkbox" value="design"> design major<br>
+    <input type="checkbox" value="third"> 3rd year<br>
+    <input type="checkbox" value="student"> uc davis student<br>
+    <input type="checkbox" checked="checked" value="davis"> city of davis resident<br>
+  </form>
+
+  <section id="choose">
+  now viewing <select>
+    <option>uc davis students</option>
+    <option>design majors</option>
+    <option>3rd year students</option>
+    <option>city of davis</option>
+  </select></section><br>
+
+  <nav>
+    <input id="submit" type="submit" value="submit" />
+    <a id="start">start</a>
+    
+     <a id="view">view galaxies </a>
+
+  </nav>
+
+</body>
+<!-- particles.js library-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- p5 library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+<script src="index.js"></script>
+
+</html>
