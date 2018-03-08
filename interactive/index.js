@@ -3,6 +3,14 @@
 //form
 var community = document.getElementById('community');
 var choose = document.getElementById('choose');
+var star = document.getElementById('star');
+var planet = document.getElementById('planet');
+
+var identity = document.getElementById('identity');
+
+//
+var color = document.getElementById("color");
+var userColor = color.options[color.selectedIndex].value;
 
 //h1
 var label = document.getElementById('label');
@@ -12,41 +20,105 @@ var start = document.getElementById('start');
 var view = document.getElementById('view');
 var submit = document.getElementById('submit');
 
-// p5 container
-var planets = document.getElementById('planets');
+var confirm = document.getElementById('confirm');
 
+// p5 container
+var galaxy = document.getElementById('galaxy1');
+
+// options
+var design = document.getElementById('design');
+var junior = document.getElementById('junior');
+var student = document.getElementById('student');
+var davis = document.getElementById('davis');
 
 start.addEventListener('click', function(){
-  label.innerHTML="customize";
+  label.innerHTML="communities";
   p2.style.display="block";
-  p1.style.display="none";
-  start.style.display="none";
   community.style.display="block";
   submit.style.display="block";
+// hiding...
+  p1.style.display="none";
+  start.style.display="none";
 })
 
 submit.addEventListener('click', function(){
   label.innerHTML="is this okay?";
+// showing....
+  p2b.style.display="block";
+  yes.style.display="block";
+  no.style.display="block";
+  results.style.display="block";
+// hiding...
   submit.style.display="none";
   p2.style.display="none";
-  p2b.style.display="block";
   community.style.display="none";
+
+  if (davis.checked ==true){
+    results.innerHTML+="city of davis resident <br>"
+  }
+  if (design.checked ==true){
+    results.innerHTML+="design major <br>"
+  }
+  if (student.checked ==true){
+    results.innerHTML+="UC davis student <br>"
+  }
+  if (junior.checked ==true){
+    results.innerHTML+="third-year student <br>"
+  }
 })
 
+yes.addEventListener('click', function(){
+    // messages
+    label.innerHTML="customize";
+    p2.innerHTML="how do you want to represent yourself?";
+
+    // showing...
+    identity.style.display="block";
+    p2.style.display="block";
+    confirm.style.display="block";
+
+    // hiding..
+    p2b.style.display="none";
+    yes.style.display="none";
+    no.style.display="none";
+    results.style.display="none";
+})
+
+confirm.addEventListener( 'click', function(){
+    // messages
+
+
+    // showing...
+custom.style.display="block";
+
+    // hiding..
+    identity.style.display="none";
+
+})
+
+
+// p5 planets
 function setup() {
  var canvas= createCanvas(1000, 1000);
-  canvas.parent('planets');
+  canvas.parent('galaxy1');
+
 }
 
 function draw() {
   fill('pink');
   background('black');
   ellipse(300, 300, 100, 100);
+  fill('lightgreen');
+  ellipse(600, 500, 150, 150);
+  fill('lightblue');
+  ellipse(450, 400, 50, 50);
+  fill('purple');
+  ellipse(900, 300, 100, 100);
 }
 
 view.addEventListener('click', function(){
 // displaying..
-planets.style.display="block";
+galaxy1.style.display="block";
 choose.style.display="block";
 
 // hiding...
@@ -54,6 +126,7 @@ label.style.display="none";
 p1.style.display="none";
 start.style.display='none';
 view.style.display="none";
+community.style.display="none";
 })
 
 // particles library!

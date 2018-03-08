@@ -101,8 +101,8 @@ form {
 
 #view {
   position: absolute;
-  top: 60%;
-  left: 40%;
+  top: 65%;
+  left: 41%;
   width: 163px;
 }
 
@@ -112,7 +112,7 @@ form {
   top: 53%;
 }
 
-#planets {
+#galaxy1 {
   display: none;
 }
 
@@ -124,6 +124,72 @@ form {
 }
 
 select {
-
   font-size:30px;
+}
+
+#yes {
+  display:none;
+  text-align:center;
+  width:50px;
+  position: absolute;
+  left: 44%;
+  top: 53%;
+}
+
+#no {
+  display:none;
+  text-align:center;
+    width:50px;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+}
+
+#planet {
+
+}
+
+
+#star {
+
+
+}
+#identity {
+  left: 40%;
+  top: 40%;
+  position: absolute;
+  display:none;
+  color:white;
+  font-size:45px;
+}
+
+#confirm {
+  font-family: "VT323";
+  font-size: 30px;
+  background-color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 0.5;
+  display: none;
+  padding: 10px;
+  border-style: inset;
+  position: absolute;
+  left: 43%;
+  top: 53%;
+}
+
+#custom {
+  display:block;
+  left: 40%;
+  top: 40%;
+  position: absolute;
+  display: none;
+  color: white;
+}
+
+#results {
+  display:none;
+  position:absolute;
+  font-size:40px;
+  top: 30%;
 }
