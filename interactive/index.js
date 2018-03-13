@@ -28,7 +28,6 @@ var pl1 = document.getElementById('pl1');
 var pl2 = document.getElementById('pl2');
 var pl3 = document.getElementById('pl3');
 var pl4 = document.getElementById('pl4');
-var pl5 = document.getElementById('pl5');
 
 
 // options
@@ -152,7 +151,6 @@ choose.addEventListener('mouseover', function(){
         pl2.style.display="block";
         pl4.style.display="none";
         pl3.style.display="none";
-        pl5.style.display="none";
 
 
     }
@@ -163,7 +161,6 @@ choose.addEventListener('mouseover', function(){
         pl3.style.display="block";
         pl1.style.display="none";
           pl2.style.display="none";
-          pl5.style.display="none";
         }
     if (ucd.selected ==true){
       info.innerHTML="uc davis provides a rich variety of entertainment events, art installations, exhibits, and workshops throughout the year that often go unnoticed. <br><br>below, you can find a categorized list of events in this community."
@@ -172,7 +169,6 @@ choose.addEventListener('mouseover', function(){
         pl3.style.display="none";
         pl1.style.display="block";
           pl2.style.display="none";
-          pl5.style.display="block";
     }
     if (thr.selected ==true){
       info.innerHTML="third-year students at davis may be seeking internships or study abroad programs as they near graduation. <br><br> below, uc davis events can be relevant to these goals. <br>"
@@ -181,7 +177,6 @@ choose.addEventListener('mouseover', function(){
         pl3.style.display="block";
         pl1.style.display="none";
           pl2.style.display="none";
-          pl5.style.display="none";
     }
 
 })
