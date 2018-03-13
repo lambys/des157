@@ -141,12 +141,12 @@ choose.addEventListener('mouseover', function(){
 
     if (dav.selected ==true){
       info.innerHTML="the city of davis, especially downtown davis, has a lively community with frequent events and gatherings to bring residents together.<br><br> below is a list of all the upcoming events in downtown davis.";
-      calendar.href="https://http://davisdowntown.com/calendar/";
+      calendar.href="http://davisdowntown.com/calendar/";
 
     }
     if (des.selected ==true){
       info.innerHTML="the design department at UC davis offers a range of unique events and exhibitions. you can often find events that provide information on internships and design careers. <br><br> below is an organized calendar of upcoming design events."
-        calendar.href="https://http://arts.ucdavis.edu/design-events-and-exhibitions/";
+        calendar.href="http://arts.ucdavis.edu/design-events-and-exhibitions/";
     }
     if (ucd.selected ==true){
       info.innerHTML="uc davis provides a rich variety of entertainment events, art installations, exhibits, and workshops throughout the year that often go unnoticed. <br><br>below, you can find a categorized list of events in this community."
