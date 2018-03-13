@@ -230,11 +230,12 @@ avsubmit.addEventListener('click', function() {
 
 
   // displaying..
+    label.innerHTML="community galaxies";
   choose.style.display="block";
   events.style.display="block";
 
   // hiding...
-  label.style.display="none";
+
   questions.style.display='none';
   confirm.style.display="none";
   avsubmit.style.display="none";
