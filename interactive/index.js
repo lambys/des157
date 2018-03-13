@@ -24,6 +24,12 @@ var avback = document.getElementById('avback');
 
 var calendar = document.getElementById('calendar');
 
+var pl1 = document.getElementById('pl1');
+var pl2 = document.getElementById('pl2');
+var pl3 = document.getElementById('pl3');
+var pl4 = document.getElementById('pl4');
+var pl5 = document.getElementById('pl5');
+
 
 // options
 var design = document.getElementById('design');
@@ -142,19 +148,40 @@ choose.addEventListener('mouseover', function(){
     if (dav.selected ==true){
       info.innerHTML="the city of davis, especially downtown davis, has a lively community with frequent events and gatherings to bring residents together.<br><br> below is a list of all the upcoming events in downtown davis.";
       calendar.href="http://davisdowntown.com/calendar/";
+      pl1.style.display="block";
+        pl2.style.display="block";
+        pl4.style.display="none";
+        pl3.style.display="none";
+        pl5.style.display="none";
+
 
     }
     if (des.selected ==true){
       info.innerHTML="the design department at UC davis offers a range of unique events and exhibitions. you can often find events that provide information on internships and design careers. <br><br> below is an organized calendar of upcoming design events."
         calendar.href="http://arts.ucdavis.edu/design-events-and-exhibitions/";
-    }
+        pl4.style.display="block";
+        pl3.style.display="block";
+        pl1.style.display="none";
+          pl2.style.display="none";
+          pl5.style.display="none";
+        }
     if (ucd.selected ==true){
       info.innerHTML="uc davis provides a rich variety of entertainment events, art installations, exhibits, and workshops throughout the year that often go unnoticed. <br><br>below, you can find a categorized list of events in this community."
         calendar.href="https://www.ucdavis.edu/calendar/all-events/";
+        pl4.style.display="none";
+        pl3.style.display="none";
+        pl1.style.display="block";
+          pl2.style.display="none";
+          pl5.style.display="block";
     }
     if (thr.selected ==true){
       info.innerHTML="third-year students at davis may be seeking internships or study abroad programs as they near graduation. <br><br> below, uc davis events can be relevant to these goals. <br>"
         calendar.href="https://www.ucdavis.edu/calendar/all-events/";
+        pl4.style.display="none";
+        pl3.style.display="block";
+        pl1.style.display="none";
+          pl2.style.display="none";
+          pl5.style.display="none";
     }
 
 })

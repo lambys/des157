@@ -243,3 +243,43 @@ left:10%;
   width:180px;
   text-align:center;
 }
+
+#pl1{
+  position:absolute;
+  display:none;
+  width:200px;
+  bottom:40%;
+  left:20%;
+}
+
+#pl2{
+  position:absolute;
+  display:none;
+    width:400px;
+    bottom: 20%;
+    left: 10%;
+}
+
+#pl3{
+  position:absolute;
+  display:none;
+  top: 40%;
+  right: 30%;
+  width:100px;
+}
+
+#pl4{
+  position:absolute;
+  display:none;
+  width:300px;
+  top:30%;
+  left:15%;
+}
+
+#pl5{
+  position:absolute;
+  display:none;
+  width: 100px;
+  top:50%;
+  left:25%;
+}
