@@ -27,9 +27,11 @@ body {
 h1 {
   text-align: center;
   color: white;
+  position: absolute;
+  top: 20%;
+  left: 47%;
   text-shadow: 1px 1px 1px purple;
   font-size: 50px;
-  padding-top:100px;
 }
 
 p {
@@ -41,25 +43,7 @@ p {
   left: 35%;
 }
 
-#preview{
-  position:absolute;
-  left:99%;
-  top:5%;
-}
-img {
-  position:absolute;
-}
 
-#ringImg{
-width:300px;
-}
-
-#colorImg{
-width:300px;
-}
-#patternImg{
-width:300px;
-}
 /* messages */
 
 #p2b {
@@ -101,13 +85,21 @@ form {
 }
 
 #submit {
+  font-family: "VT323";
+  font-size: 30px;
+  background-color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 0.5;
+  display: none;
+  padding: 10px;
+  border-style: inset;
   position: absolute;
   left: 48%;
   top: 53%;
 }
 
 #view {
-  display:none;
   position: absolute;
   top: 65%;
   left: 41%;
@@ -126,7 +118,7 @@ form {
 
 #choose {
   display:none;
-  left: 20%;
+  left: 42%;
   top: 15%;
   position: absolute;
 }
@@ -153,6 +145,15 @@ select {
     top: 53%;
 }
 
+#planet {
+
+}
+
+
+#star {
+
+
+}
 #identity {
   left: 40%;
   top: 40%;
@@ -162,16 +163,19 @@ select {
   font-size:45px;
 }
 
-#type {
+#confirm {
+  font-family: "VT323";
+  font-size: 30px;
+  background-color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 0.5;
+  display: none;
+  padding: 10px;
+  border-style: inset;
   position: absolute;
   left: 43%;
   top: 53%;
-}
-
-#confirm {
-  position: absolute;
-  left: 43%;
-  top: 54%;
 }
 
 #custom {
@@ -183,63 +187,9 @@ select {
   color: white;
 }
 
-.confirm {
-  font-family: "VT323";
-  font-size: 30px;
-  background-color: white;
-  border-radius: 100px;
-  text-decoration: none;
-  opacity: 0.5;
-  display: none;
-  padding: 10px;
-  border-style: inset;
-}
-
 #results {
   display:none;
   position:absolute;
   font-size:40px;
   top: 30%;
-}
-
-#avsubmit {
-  position: absolute;
-  left: 40%;
-  top: 30%;
-}
-#avback {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-}
-
-
-#events{
-  position:absolute;
-  right: 15%;
-  display:none;
-}
-
-h2{
-  background:rgba(255,255,255,0.5);
-  color:white;
-  font-size:30px;
-  padding:5px;
-}
-
-
-#info{
-  position:absolute;
-width:250px;
-font-size:15px;
-top:80%;
-left:10%;
-
-}
-
-.calendar {
-  position:absolute;
-  margin-top:160px;
-  width:180px;
-  text-align:center;
 }

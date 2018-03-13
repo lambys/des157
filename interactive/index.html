@@ -15,71 +15,98 @@
   </div>
   <div id="galaxy1">
   </div>
+
+
   <h1 id="label"> welcome </h1>
 
-  <p id="p1"> have you ever wanted to visualize your place in your communities?<br> galaxsee is a project that represents communities as interactive galaxies.<br> press start to customize yourself, or choose to view existing communities. </p>
-
+<!-- messages -->
+  <p id="p1"> have you ever wanted to visualize your place in your local communities?<br> galaxsee is a project that represents communities as galaxies.<br>
+    press start to customize your own planet!! </p>
   <p id="p2"> choose any and all communities that apply to you!</p>
   <p id="p2b"> you have chosen: <br></p>
   <p id="results"> </p>
 
   <form id="community" action="/action_page.php" method="get">
     <input id="design" type="checkbox" value="design"> design major<br>
-    <input id="junior"type="checkbox" value="third"> 3rd year<br>
+    <input id="junior" type="checkbox" value="third"> 3rd year<br>
     <input id="student" type="checkbox" value="student"> uc davis student<br>
     <input id="davis" type="checkbox" checked="checked" value="davis"> city of davis resident<br>
   </form>
 
+
+  <form id="identity" method="get">
+    <input id="planet" type="radio" name="avatar"> planet<br></input>
+    <input id="star" type="radio" name="avatar"> star (under construction)<br></input>
+  </form>
+  <a class="confirm" id="type">confirm</a>
+  <a id="yes">yes</a>
+  <a id="no">no </a>
+
+
+<!-- AVATAR CREATION FORMS-->
+<!-- PLANETS -->
+    <section id="custom">
+          <div id="preview">
+          <img src="planets/blue-plain.png"  id="colorImg">
+          <img src="planets/blank.png"  id="patternImg">
+          <img src="planets/blank.png" id="ringImg">
+          </div>
+<section id="questions">
+        <form> color <select  id="color" onchange="colorSel('colorImg',this.selectedIndex)">
+      <option value="0">blue</option>
+      <option value="1">pink</option>
+      <option value="2">green</option>
+      <option value="3">purple</option>
+      <option value="4">orange</option>
+    </select>
+  </form>
+
+    <form> pattern <select  id="pattern" onchange="patternSel('patternImg',this.selectedIndex)">
+    <option value="0">none</option>
+    <option value="1">dots</option>
+    <option value="2">stripes</option>
+    <option value="3">cracks</option>
+  </select>
+</form>
+
+    <form> rings <select id="rings" onchange="ringSel('ringImg',this.selectedIndex)">
+    <option value="0">no</option>
+    <option value="1">yes</option>
+  </select>
+</form>
+  </section>
+    </section>
+
+    <a class="confirm" id="confirm">confirm</a>
+        <a class="confirm" id="avsubmit">yes</a>
+        <a class="confirm" id="avback">no</a>
+
+<!-- STARS (TO BE ADDED) -->
+
+  <nav>
+    <input  class="confirm" id="submit" type="submit" value="submit" />
+    <a id="start">start</a>
+    <a id="view">view galaxies </a>
+  </nav>
+
   <section id="choose">
-    now viewing <select>
-    <option>uc davis students</option>
-    <option>design majors</option>
-    <option>3rd year students</option>
-    <option>city of davis</option>
+    <p>now viewing. . . </p><select>
+    <option id="ucd">uc davis students</option>
+    <option id="des">design majors</option>
+    <option id="thr">3rd year students</option>
+    <option id="dav">city of davis</option>
   </select></section><br>
 
 
-
-  <form id="identity"  method="get">
-    <input id="planet" type="radio" name="avatar"> planet<br></input>
-    <input id="star"  type="radio" name="avatar"> star<br></input>
-</form>
-    <a id="confirm">confirm</a>
-<a id="yes">yes</a>
-<a id="no">no </a>
-
-<section id="custom">
-  <div id="preview">
-  </div>
-  fav color <select id="color">
-    <option value="blue">blue</option>
-    <option value="pink">pink</option>
-    <option value="yellow">yellow</option>
-  </select><br>
-  pattern <select>
-    <option value="dots">dots</option>
-    <option value="stripe">stripe</option>
-    <option value="fade">fade</option>
-  </select> <br>
-  rings <select>
-    <option>yes</option>
-    <option>no</option>
-  </select><br>
-  size <select>
-    <option>s</option>
-    <option>m</option>
-    <option>l</option>
-  </select>
-</section>
+<div id="events">
+    <h2> upcoming events </h2>
+    <p id="info">uc davis provides a rich variety of entertainment events,
+    art installations, exhibits, and workshops throughout the year
+  that often go unnoticed. <br><br>
+  below, you can find a categorized list of events in this community. </p>
+<a class="calendar" id="calendar" href="https://www.ucdavis.edu/calendar/all-events/">event calendar</a>
 
 
-  <nav>
-    <input id="submit" type="submit" value="submit" />
-    <a id="start">start</a>
-
-    <a id="view">view galaxies </a>
-
-  </nav>
 
 </body>
 <!-- particles.js library-->

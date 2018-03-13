@@ -6,11 +6,8 @@ var choose = document.getElementById('choose');
 var star = document.getElementById('star');
 var planet = document.getElementById('planet');
 
-var identity = document.getElementById('identity');
-
 //
 var color = document.getElementById("color");
-var userColor = color.options[color.selectedIndex].value;
 
 //h1
 var label = document.getElementById('label');
@@ -19,17 +16,90 @@ var label = document.getElementById('label');
 var start = document.getElementById('start');
 var view = document.getElementById('view');
 var submit = document.getElementById('submit');
-
 var confirm = document.getElementById('confirm');
+var type = document.getElementById('type');
 
-// p5 container
-var galaxy = document.getElementById('galaxy1');
+var avsubmit = document.getElementById('avsubmit');
+var avback = document.getElementById('avback');
+
+var calendar = document.getElementById('calendar');
+
 
 // options
 var design = document.getElementById('design');
 var junior = document.getElementById('junior');
 var student = document.getElementById('student');
 var davis = document.getElementById('davis');
+
+
+var info = document.getElementById('info');
+
+var des = document.getElementById('des');
+var thr = document.getElementById('thr');
+var ucd = document.getElementById('ucd');
+var dav = document.getElementById('dav');
+
+var questions= document.getElementById('questions')
+
+function colorSel(objId,theValue) {
+    var imgs=["planets/blue-plain.png","planets/pink-plain.png",
+    "planets/green-plain.png", "planets/purple-plain.png", "planets/orange-plain.png"];
+
+    var d=document;
+    theValue=imgs[theValue];
+    if (!theValue || !d.getElementById ) return;
+    var obj = d.getElementById(objId);
+    if (obj) obj.src=theValue;
+}
+
+
+function ringSel(objId,theValue) {
+    var imgs=["planets/blank.png","planets/rings.png"];
+    var d=document;
+    theValue=imgs[theValue];
+    if (!theValue || !d.getElementById ) return;
+    var obj = d.getElementById(objId);
+    if (obj) obj.src=theValue;
+}
+
+function patternSel(objId,theValue) {
+    var imgs=["planets/blank.png","planets/dots.png","planets/stripes.png",
+      "planets/cracks.png"];
+    var d=document;
+    theValue=imgs[theValue];
+    if (!theValue || !d.getElementById ) return;
+    var obj = d.getElementById(objId);
+    if (obj) obj.src=theValue;
+}
+
+// function sizeSel(objId,theValue) {
+//     var d=document;
+//       var sizes = d.getElementById(sizes);
+//       var obj = d.getElementById(objId);
+//       var s = d.getElementById(s);
+//       var m = d.getElementById(m);
+//       var l = d.getElementById(l);
+//       var colorImg = d.getElementById(colorImg);
+//       var patternImg = d.getElementById(patternImg);
+//       var ringImg = d.getElementById(ringImg);
+//     if (s.checked=="true"){
+//       colorImg.style.width="200px";
+//       patternImg.style.width="200px";
+//       ringImg.style.width="200px";
+//     }
+//
+//     if (m.checked=="true"){
+//       colorImg.style.width="300px";
+//       patternImg.style.width="300px";
+//       ringImg.style.width="300px";
+//     }
+//
+//     if (l.checked=="true"){
+//       colorImg.style.width="400px";
+//       patternImg.style.width="400px";
+//       ringImg.style.width="400px";
+//     }
+// }
 
 start.addEventListener('click', function(){
   label.innerHTML="communities";
@@ -67,6 +137,28 @@ submit.addEventListener('click', function(){
   }
 })
 
+choose.addEventListener('mouseover', function(){
+
+    if (dav.selected ==true){
+      info.innerHTML="the city of davis, especially downtown davis, has a lively community with frequent events and gatherings to bring residents together.<br><br> below is a list of all the upcoming events in downtown davis.";
+      calendar.href="https://http://davisdowntown.com/calendar/";
+
+    }
+    if (des.selected ==true){
+      info.innerHTML="the design department at UC davis offers a range of unique events and exhibitions. you can often find events that provide information on internships and design careers. <br><br> below is an organized calendar of upcoming design events."
+        calendar.href="https://http://arts.ucdavis.edu/design-events-and-exhibitions/";
+    }
+    if (ucd.selected ==true){
+      info.innerHTML="uc davis provides a rich variety of entertainment events, art installations, exhibits, and workshops throughout the year that often go unnoticed. <br><br>below, you can find a categorized list of events in this community."
+        calendar.href="https://www.ucdavis.edu/calendar/all-events/";
+    }
+    if (thr.selected ==true){
+      info.innerHTML="third-year students at davis may be seeking internships or study abroad programs as they near graduation. <br><br> below, uc davis events can be relevant to these goals. <br>"
+        calendar.href="https://www.ucdavis.edu/calendar/all-events/";
+    }
+
+})
+
 yes.addEventListener('click', function(){
     // messages
     label.innerHTML="customize";
@@ -75,7 +167,7 @@ yes.addEventListener('click', function(){
     // showing...
     identity.style.display="block";
     p2.style.display="block";
-    confirm.style.display="block";
+    type.style.display="block";
 
     // hiding..
     p2b.style.display="none";
@@ -84,37 +176,88 @@ yes.addEventListener('click', function(){
     results.style.display="none";
 })
 
-confirm.addEventListener( 'click', function(){
-    // messages
+no.addEventListener('click', function(){
+  label.innerHTML="communities";
+  p2.style.display="block";
+  community.style.display="block";
+  submit.style.display="block";
+  // hiding...
+  p2b.style.display="none";
+  yes.style.display="none";
+  no.style.display="none";
+  results.style.display="none";
 
-
-    // showing...
-custom.style.display="block";
-
-    // hiding..
-    identity.style.display="none";
 
 })
 
+type.addEventListener( 'click', function(){
+    // messages
+    // showing...
+custom.style.display="block";
+confirm.style.display="block";
+    // hiding..
+    identity.style.display="none";
+    type.style.display="none";
+})
 
-// p5 planets
-function setup() {
- var canvas= createCanvas(1000, 1000);
-  canvas.parent('galaxy1');
+confirm.addEventListener('click', function() {
+  // messages
+    label.innerHTML="is this okay?";
+    // showing...
+    p2.style.display="none";
+    questions.style.display="none";
+    confirm.style.display="none";
+    // hiding..
+    avsubmit.style.display="block";
+    avback.style.display="block";
 
-}
 
-function draw() {
-  fill('pink');
-  background('black');
-  ellipse(300, 300, 100, 100);
-  fill('lightgreen');
-  ellipse(600, 500, 150, 150);
-  fill('lightblue');
-  ellipse(450, 400, 50, 50);
-  fill('purple');
-  ellipse(900, 300, 100, 100);
-}
+})
+
+avback.addEventListener( 'click', function(){
+    // messages
+    label.innerHTML="customize";
+    // showing...
+questions.style.display="block";
+confirm.style.display="block";
+    // hiding..
+    avsubmit.style.display="none";
+    avback.style.display="none";
+
+})
+
+avsubmit.addEventListener('click', function() {
+
+
+  // displaying..
+  choose.style.display="block";
+  events.style.display="block";
+
+  // hiding...
+  label.style.display="none";
+  questions.style.display='none';
+  confirm.style.display="none";
+  avsubmit.style.display="none";
+  avback.style.display="none";
+})
+// // p5 planets
+// function setup() {
+//  var canvas= createCanvas(1000, 1000);
+//   canvas.parent('galaxy1');
+//
+// }
+//
+// function draw() {
+//   fill('pink');
+//   background('black');
+//   ellipse(300, 300, 100, 100);
+//   fill('lightgreen');
+//   ellipse(600, 500, 150, 150);
+//   fill('lightblue');
+//   ellipse(450, 400, 50, 50);
+//   fill('purple');
+//   ellipse(900, 300, 100, 100);
+// }
 
 view.addEventListener('click', function(){
 // displaying..
