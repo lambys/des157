@@ -1,0 +1,289 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+* {
+  font-family: "VT323";
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "VT323";
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px purple;
+  font-size: 50px;
+  padding-top:100px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+#preview{
+  position:absolute;
+  left:99%;
+  top:5%;
+}
+img {
+  position:absolute;
+}
+
+#ringImg{
+width:300px;
+}
+
+#colorImg{
+width:300px;
+}
+#patternImg{
+width:300px;
+}
+/* messages */
+
+#p2b {
+  display: none;
+}
+
+#p2 {
+  display: none;
+}
+
+a {
+  margin: auto;
+  margin-left: 50px;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 0.5;
+  display: inline-block;
+  padding: 10px;
+  border-style: inset;
+}
+
+a:hover {
+  opacity: 0.8;
+  color: pink;
+}
+
+#community {
+  left: 40%;
+  top: 40%;
+  position: absolute;
+  display: none;
+  color: white;
+}
+
+form {
+  font-size: 30px;
+}
+
+#submit {
+  position: absolute;
+  left: 48%;
+  top: 53%;
+}
+
+#view {
+  display:none;
+  position: absolute;
+  top: 65%;
+  left: 41%;
+  width: 163px;
+}
+
+#start {
+  position: absolute;
+  left: 44%;
+  top: 53%;
+}
+
+#galaxy1 {
+  display: none;
+}
+
+#choose {
+  display:none;
+  left: 20%;
+  top: 15%;
+  position: absolute;
+}
+
+select {
+  font-size:30px;
+}
+
+#yes {
+  display:none;
+  text-align:center;
+  width:50px;
+  position: absolute;
+  left: 44%;
+  top: 53%;
+}
+
+#no {
+  display:none;
+  text-align:center;
+    width:50px;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+}
+
+#identity {
+  left: 40%;
+  top: 40%;
+  position: absolute;
+  display:none;
+  color:white;
+  font-size:45px;
+}
+
+#type {
+  position: absolute;
+  left: 43%;
+  top: 53%;
+}
+
+#confirm {
+  position: absolute;
+  left: 43%;
+  top: 54%;
+}
+
+#custom {
+  display:block;
+  left: 40%;
+  top: 40%;
+  position: absolute;
+  display: none;
+  color: white;
+}
+
+.confirm {
+  font-family: "VT323";
+  font-size: 30px;
+  background-color: white;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 0.5;
+  display: none;
+  padding: 10px;
+  border-style: inset;
+}
+
+#results {
+  display:none;
+  position:absolute;
+  font-size:40px;
+  top: 30%;
+}
+
+#avsubmit {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
+#avback {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+
+#events{
+  position:absolute;
+  right: 15%;
+  display:none;
+}
+
+h2{
+  background:rgba(255,255,255,0.5);
+  color:white;
+  font-size:30px;
+  padding:5px;
+}
+
+
+#info{
+  position:absolute;
+width:250px;
+font-size:15px;
+top:80%;
+left:10%;
+
+}
+
+.calendar {
+  position:absolute;
+  margin-top:160px;
+  width:180px;
+  text-align:center;
+}
+
+/* #pl1{
+  position:absolute;
+  display:none;
+  width:200px;
+  bottom:40%;
+  left:20%;
+}
+
+#pl2{
+  position:absolute;
+  display:none;
+    width:400px;
+    bottom: 20%;
+    left: 10%;
+}
+
+#pl3{
+  position:absolute;
+  display:none;
+  top: 40%;
+  right: 30%;
+  width:100px;
+}
+
+#pl4{
+  position:absolute;
+  display:none;
+  width:300px;
+  top:30%;
+  left:15%;
+}
+
+#pl5{
+  position:absolute;
+  display:none;
+  width: 100px;
+  top:50%;
+  left:25%;
+}
+
+#hidden{
+  display:none;
+} */
