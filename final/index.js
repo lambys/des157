@@ -24,12 +24,6 @@ var avback = document.getElementById('avback');
 
 var calendar = document.getElementById('calendar');
 
-// var pl1 = document.getElementById('pl1');
-// var pl2 = document.getElementById('pl2');
-// var pl3 = document.getElementById('pl3');
-// var pl4 = document.getElementById('pl4');
-
-
 // options
 var design = document.getElementById('design');
 var junior = document.getElementById('junior');
@@ -77,35 +71,6 @@ function patternSel(objId,theValue) {
     if (obj) obj.src=theValue;
 }
 
-// function sizeSel(objId,theValue) {
-//     var d=document;
-//       var sizes = d.getElementById(sizes);
-//       var obj = d.getElementById(objId);
-//       var s = d.getElementById(s);
-//       var m = d.getElementById(m);
-//       var l = d.getElementById(l);
-//       var colorImg = d.getElementById(colorImg);
-//       var patternImg = d.getElementById(patternImg);
-//       var ringImg = d.getElementById(ringImg);
-//     if (s.checked=="true"){
-//       colorImg.style.width="200px";
-//       patternImg.style.width="200px";
-//       ringImg.style.width="200px";
-//     }
-//
-//     if (m.checked=="true"){
-//       colorImg.style.width="300px";
-//       patternImg.style.width="300px";
-//       ringImg.style.width="300px";
-//     }
-//
-//     if (l.checked=="true"){
-//       colorImg.style.width="400px";
-//       patternImg.style.width="400px";
-//       ringImg.style.width="400px";
-//     }
-// }
-
 start.addEventListener('click', function(){
   label.innerHTML="communities";
   p2.style.display="block";
@@ -147,36 +112,22 @@ choose.addEventListener('mouseover', function(){
     if (dav.selected ==true){
       info.innerHTML="the city of davis, especially downtown davis, has a lively community with frequent events and gatherings to bring residents together.<br><br> below is a list of all the upcoming events in downtown davis.";
       calendar.href="http://davisdowntown.com/calendar/";
-      // pl1.style.display="block";
-      //   pl2.style.display="block";
-      //   pl4.style.display="none";
-      //   pl3.style.display="none";
 
 
     }
     if (des.selected ==true){
       info.innerHTML="the design department at UC davis offers a range of unique events and exhibitions. you can often find events that provide information on internships and design careers. <br><br> below is an organized calendar of upcoming design events."
         calendar.href="http://arts.ucdavis.edu/design-events-and-exhibitions/";
-        // pl4.style.display="block";
-        // pl3.style.display="block";
-        // pl1.style.display="none";
-        //   pl2.style.display="none";
+
         }
     if (ucd.selected ==true){
       info.innerHTML="uc davis provides a rich variety of entertainment events, art installations, exhibits, and workshops throughout the year that often go unnoticed. <br><br>below, you can find a categorized list of events in this community."
         calendar.href="https://www.ucdavis.edu/calendar/all-events/";
-        // pl4.style.display="none";
-        // pl3.style.display="none";
-        // pl1.style.display="block";
-        //   pl2.style.display="none";
+
     }
     if (thr.selected ==true){
       info.innerHTML="third-year students at davis may be seeking internships or study abroad programs as they near graduation. <br><br> below, uc davis events can be relevant to these goals. <br>"
         calendar.href="https://www.ucdavis.edu/calendar/all-events/";
-        // pl4.style.display="none";
-        // pl3.style.display="block";
-        // pl1.style.display="none";
-        //   pl2.style.display="none";
     }
 
 })
@@ -263,24 +214,6 @@ avsubmit.addEventListener('click', function() {
   avsubmit.style.display="none";
   avback.style.display="none";
 })
-// // p5 planets
-// function setup() {
-//  var canvas= createCanvas(1000, 1000);
-//   canvas.parent('galaxy1');
-//
-// }
-//
-// function draw() {
-//   fill('pink');
-//   background('black');
-//   ellipse(300, 300, 100, 100);
-//   fill('lightgreen');
-//   ellipse(600, 500, 150, 150);
-//   fill('lightblue');
-//   ellipse(450, 400, 50, 50);
-//   fill('purple');
-//   ellipse(900, 300, 100, 100);
-// }
 
 view.addEventListener('click', function(){
 // displaying..
