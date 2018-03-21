@@ -34,8 +34,8 @@
 
 
   <form id="identity" method="get">
-    <input id="planet" type="radio" name="avatar"> planet<br></input>
-    <input id="star" type="radio" name="avatar"> star (under construction)<br></input>
+    <input id="planet" type="radio" name="avatar"> planet<br>
+    <input id="star" type="radio" name="avatar"> star (under construction)<br>
   </form>
   <a class="confirm" id="type">confirm</a>
   <a id="yes">yes</a>
@@ -44,9 +44,9 @@
 <!-- PLANET CREATION FORMS-->
     <section id="custom">
           <div id="preview">
-          <img src="planets/blue-plain.png"  id="colorImg">
-          <img src="planets/blank.png"  id="patternImg">
-          <img src="planets/blank.png" id="ringImg">
+          <img alt="blue" src="planets/blue-plain.png"  id="colorImg">
+          <img alt="empty" src="planets/blank.png"  id="patternImg">
+          <img alt="empty" src="planets/blank.png" id="ringImg">
           </div>
 <section id="questions">
         <form> color <select  id="color" onchange="colorSel('colorImg',this.selectedIndex)">
@@ -82,6 +82,7 @@
     <input  class="confirm" id="submit" type="submit" value="submit" />
     <a id="start">start</a>
     <a id="view">view galaxies </a>
+
   </nav>
 
   <section id="choose">
@@ -100,6 +101,7 @@
   that often go unnoticed. <br><br>
   below, you can find a categorized list of events in this community. </p>
 <a class="calendar" id="calendar" target="_blank" href="https://www.ucdavis.edu/calendar/all-events/">event calendar</a>
+</div>
 
 </body>
 <!-- particles.js library-->
